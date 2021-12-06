@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"description" : "Converting the story about MIKUEC into about NIKUEC.",
+	"name": "NIKUECコンバーター",
+	"short_name": "NIKUEConv",
+	"version": "0.2.9",
+	"icons": {
+	    "16": "icon16.png",
+	    "48": "icon48.png",
+	    "128": "icon128.png"
+	},
+	"permissions": [	],
+	"content_scripts": [
+		{
+		    "matches": ["http://*/*", "https://*/*"],
+
+		    "js": ["nikueconverter.js"]
+		}
+	]
+}
